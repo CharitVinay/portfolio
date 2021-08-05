@@ -1,0 +1,43 @@
+<div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top mt-100">
+            <div class="row container-fluid">
+                <div class="col-md-5"><a class="navbar-brand" href="#"><img src="logo.png" alt="logo" style="width:100px"></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" onclick="navchange(event,'home1')">
+                            <a class="nav-link active" id="home1" aria-current="page" href="./index.html" style="color:white">Home</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'about1')">
+                            <a class="nav-link" id="about1" href="#about" style="color:white">About us</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'services1')">
+                            <a class="nav-link" id="services1" href="#services" style="color:white">Services</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'projects1')">
+                            <a class="nav-link" id="projects1" href="#projects" style="color:white">Projects</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'contact1')">
+                            <a class="nav-link" id="contact1" href="#contact" style="color:white">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            function navchange(evt, navname) {
+                var i, tablinks;
+                tabcontent = document.getElementsByClassName("nav-link");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+                }
+
+                document.getElementById(navname).className += " active";
+                // evt.currentTarget.className += " active";
+            }
+        </script>
