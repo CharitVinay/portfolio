@@ -1,70 +1,27 @@
-html,body {
-    scroll-behavior: smooth;
-    overflow-x:hidden;
-     margin:0;
-    padding:0;
-}
-
-h5 {
-        font-weight: bold;
-    }
-    p {font-weight: 550;}
-    .nav-link,.navbar-brand
-    {
-        font-weight: bold;
-        font-size:1.3rem;
-    }
-
-    .nav-item {
-        margin-left: 20px;
-    }
-
-    .navbar-collapse
-    {
-        margin-left: 25%;
-    }
-
-    .nav-color
-    {
-        margin-left: 15%;
-    }
-
-    .heading
-    {
-        position: absolute;
-        color:white;
-        margin-top:18%;
-    }
-
-*{
-  box-sizing: border-box;
-font-family: 'Raleway', sans-serif;
-}
-
-::selection {
-  background: crimson;
-  color: white;
+body {
+  overflow-x: hidden;
 }
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
 }
 .carousel-caption {
-	bottom: 220px;
+	bottom: 320px;
 }
 .carousel-caption h5 {
 	font-size: 45px;
-	text-transform: uppercase;
+	text-align: left;
 	letter-spacing: 2px;
 	margin-top: 25px;
-	font-family: merienda;
+	font-family: sans-serif;
 }
 .carousel-caption p {
-	width: 60%;
+	width: 100%;
+	text-align: left;
 	margin: auto;
 	font-size: 18px;
 	line-height: 1.9;
-	font-family: poppins;
+	font-family: sans-serif;
 }
 .carousel-caption a {
 	text-transform: uppercase;
@@ -114,24 +71,6 @@ font-family: 'Raleway', sans-serif;
 .w-100 {
 	height: 100vh;
 }
-.underline::after
-{
-    position: absolute;
-    content: '';
-    height:2px;
-    background-color :rgb(71, 70, 70);
-    margin: 0 auto;
-	left: 0;
-    right: 0;
-    width: 12%;
-}
-.underline:hover:after
-{
-    transition: all 0.6s;
-    background-color:crimson;
-    width:15%
-}
-
 @media only screen and (max-width: 767px) {
 	.navbar-nav.ml-auto {
 		background: rgba(0, 0, 0, 0.5);
@@ -140,82 +79,15 @@ font-family: 'Raleway', sans-serif;
 		font-size: 14px;
 		font-weight: normal;
 	}
-	.underline::after
-        {
-            width: 35%;
-        }
-        .vl
-        {
-            display: none;
-        }
-        .newsletter
-        {
-            display: none;
-        }
-        .nav-color {
-        margin-left: 5%;
-        }
-        video
-        {
-            max-width: 100%;
-        }
-
-        .heading
-        {
-            margin-top: 80%;
-        }
-        .align-left,.align-right
-        {
-            text-align: center;
-        }
-
-         .facts-content
-         {
-             margin-top: 15%;
-             margin-left:0;
-         }
-
-         .img-big
-         {
-             max-width: 30%;
-         }
-
-         .facts-imgs
-         {
-             margin-top:50%;
-         }
-
-         .facts
-         {
-             min-height:152%
-         }
-
-         .services-main,.service-blocks
-
-        {
-        margin-left: 0;
-        margin-right:0;
-        }
-        .left-block
-        {
-            margin-top:75%;
-        }
-        .progress
-        {
-        height:0.7rem;
-        }
-
-        .performance
-        {
-            min-height: 150%;
-        }
-        .contact
-        {
-            margin-top:35%;
-        }
-
-        .display-4
-        {
-            margin-left: -30px;
-        }
 }
+h1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {top:10px;}
+  100% {bottom:15px;}
